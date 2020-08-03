@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>document</title>
+</head>
+<body>
+	<form action="/operation" method="post">{% csrf_token %}
+
+		<input type="number" name="val1" placeholder="1st number">
+		<input type="number" name="val2" placeholder="2nd number">
+		
+		<select name="opr">
+			<option value="+">ADD</option>
+			<option value="-">SUB</option>
+			<option value="*">MUL</option>
+			<option value="/">DIV</option>
+		</select>
+
+		<button type="submit" value="submit">Submit</button>
+
+	</form>
+
+</body>
+</html>
